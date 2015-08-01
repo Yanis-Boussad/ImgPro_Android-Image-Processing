@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ImgPro</string>
+    <string name="Undo">Undo</string>
+    <string name="action_settings">Parametres</string>
+    <string name="Redo">Redo</string>
+    <string name="Greyscale">Noir et Blanc</string>
+    <string name="Open">Ouvrir</string>
+    <string name="Save">Sauvgarder</string>
+    <string name="Invert">Negatif</string>
+    <string name="DetectEdges">Contours</string>
+    <string name="Sepia">Sepia</string>
+    <string name="Contrast">Contraste</string>
+    <string name="Brightness">Luminosite</string>
+    <string name="Sharpen">Net</string>
+    <string name="Relief">Relief</string>
+    <string name="Gaussian_Blur">Flou</string>
+    <string name="Effects">Les Effects</string>
+    <string name="Filters">Filtres</string>
+    <string name="About">A Propos</string>
+    <string name="Apply">Appliquer</string>
+    <string name="Cancel">Annuler</string>
+    <string name="title_activity_about">A propos</string>
+    <string name="aboutDescription">ImgPro v1.0\n\nDeveloppé par YANIS Boussad\nContact:    boussadyanis@gmail.com\n2015</string>
+</resources>

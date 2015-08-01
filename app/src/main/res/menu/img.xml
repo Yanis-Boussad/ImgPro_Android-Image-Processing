@@ -1,0 +1,91 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yanisboussad.imgpro.ImgPro" >
+
+    <item
+        android:id="@+id/about"
+        android:showAsAction="ifRoom"
+        android:title="@string/About"
+        />
+     <item
+        android:id="@+id/undo"
+        android:showAsAction="always"
+        android:title="@string/Undo"
+        android:icon="@drawable/ic_action_undo"/>
+      <item
+        android:id="@+id/redo"
+        android:showAsAction="always"
+        android:enabled="true"
+		android:icon="@drawable/ic_action_redo"  
+        android:title="@string/Redo"/>
+   
+    <item
+        android:id="@+id/openImage"
+        android:showAsAction="always|withText"
+        android:icon="@drawable/ic_action_picture"
+        android:title="@string/Open"
+
+        />
+    <item
+        android:id="@+id/save"
+        android:showAsAction="always|withText"
+         android:icon="@drawable/ic_action_save"
+        android:title="@string/Save"/>
+
+    <item android:title="@string/Effects"
+        android:showAsAction="always">
+
+        <menu >
+            <item
+                android:id="@+id/greyscale"
+                android:showAsAction="ifRoom"
+                android:title="@string/Greyscale"/>
+            <item
+                android:id="@+id/invert"
+                android:showAsAction="ifRoom"
+                android:title="@string/Invert"/>
+            <item
+                android:id="@+id/sepia"
+                android:showAsAction="ifRoom"
+                android:title="@string/Sepia"/>
+            <item
+                android:id="@+id/Contrast"
+                android:showAsAction="ifRoom"
+                android:title="@string/Contrast"/>
+
+            <item
+                android:id="@+id/bright"
+                android:showAsAction="ifRoom"
+                android:title="@string/Brightness"/>
+
+        </menu>
+
+    </item>
+
+    <item android:title="@string/Filters"
+        android:showAsAction="always">
+
+        <menu >
+            <item
+                android:id="@+id/edge"
+                android:showAsAction="ifRoom"
+                android:title="@string/DetectEdges"/>
+            <item
+                android:id="@+id/Relief"
+                android:showAsAction="ifRoom"
+                android:title="@string/Relief"/>
+            <item
+                android:id="@+id/sharpen"
+                android:showAsAction="ifRoom"
+                android:title="@string/Sharpen"/>
+
+            <item
+                android:id="@+id/gaussian"
+                android:showAsAction="ifRoom"
+                android:title="@string/Gaussian_Blur"/>
+        </menu>
+
+    </item>
+
+
+</menu>

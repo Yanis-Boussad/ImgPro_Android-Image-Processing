@@ -1,0 +1,36 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+
+    <!-- Application theme. -->
+    <style name="MyAppTheme" parent="AppBaseTheme">
+
+
+    <item name="android:itemBackground">@color/themeColor</item>
+    <item name="android:textColor">@color/textColor</item>
+    <item name="android:textSize">14sp</item>
+        <item name="android:typeface">sans</item>
+        <!--<item name="android:actionButtonStyle">@style/ActionButtonStyle</item>-->
+
+
+
+
+</style>
+    <style name="ActionButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton">
+
+    </style>
+
+
+
+</resources>

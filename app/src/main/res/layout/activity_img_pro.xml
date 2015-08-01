@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+
+    tools:context="com.yanisboussad.imgpro.ImgPro"
+    tools:ignore="ContentDescription" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:drawingCacheQuality="high"
+        android:scaleType="matrix"
+        android:cropToPadding="true"
+        android:adjustViewBounds="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="false" />
+
+    <SeekBar
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/brightSeekBar"
+        android:max="10"
+        android:indeterminate="false"
+        android:layout_below="@+id/progressBar1"
+        android:layout_toRightOf="@+id/brightTv"
+        android:layout_toEndOf="@+id/brightTv"
+        android:background="#4b84000e"
+        android:progress="5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Apply"
+        android:id="@+id/apply"
+        android:layout_toRightOf="@+id/brightSeekBar"
+        android:layout_alignTop="@+id/brightSeekBar"
+        android:background="#ff00830f"
+        android:textColor="#fffffff5"
+        android:layout_alignBottom="@+id/contrastTv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Brightness"
+        android:id="@+id/brightTv"
+        android:textSize="25sp"
+        android:layout_below="@+id/progressBar1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cancel"
+        android:id="@+id/cancel"
+        android:background="#ff490900"
+        android:textColor="#fffffff5"
+        android:layout_below="@+id/progressBar1"
+        android:layout_toRightOf="@+id/apply"
+        android:layout_toEndOf="@+id/cancel"
+        android:layout_alignBottom="@+id/apply" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Contrast"
+        android:id="@+id/contrastTv"
+        android:textSize="25sp"
+        android:layout_below="@+id/brightTv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/contrastSeekBar"
+        android:max="3"
+        android:indeterminate="false"
+        android:background="#4b84000e"
+        android:progress="0"
+        android:layout_below="@+id/brightSeekBar"
+        android:layout_toLeftOf="@+id/apply"
+        android:layout_toStartOf="@+id/apply" />
+
+</RelativeLayout>
